@@ -122,12 +122,7 @@ if (database.Icon && database.Icon.Type === 'file') {
                 {database.Description}
               </div>
             </header>
-            <div class="home-nav">
-              <ul>
-                <li><a href="" rel="noopener" target="_blank">ホーム</a></li>
-                <li><a href="" rel="noopener" target="_blank">ブログ</a></li>
-              </ul>
-            </div>
+           
             <slot name="main" />
 
             <footer>
@@ -164,14 +159,7 @@ if (database.Icon && database.Icon.Type === 'file') {
     display: flex;
     max-width: 1280px;
   }
-  .home-nav ul{
-    display: inline-flex;
-    list-style: none; 
-    margin: 10px 0 15px;
-  }
-  .home-nav li{
-    margin: 0 10px;
-  }
+
   @media (max-width: 640px) {
     .container > div {
       display: block;
