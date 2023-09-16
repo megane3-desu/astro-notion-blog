@@ -122,8 +122,8 @@ if (database.Icon && database.Icon.Type === 'file') {
               </div>
               <div class="top-nav">
                 <ul>
-                  <li><a href="/" rel="noopener" target="_blank">ホーム</a></li>
-                  <li><a href="https://megane3-contact.notion.site/16726c3be0854d4abf7eaf6101f04b4d" rel="noopener" target="_blank">問い合わせ</a></li>
+                  <li><a href="/" rel="noopener" target="_blank">🏠&nbsp;ホーム</a></li>
+                  <li><a href="https://megane3-contact.notion.site/16726c3be0854d4abf7eaf6101f04b4d" rel="noopener" target="_blank">📩&nbsp;問い合わせ</a></li>
                 </ul>
               </div>
             </header>
@@ -172,13 +172,16 @@ if (database.Icon && database.Icon.Type === 'file') {
     padding: 0;
   }
   .top-nav ul li{
-    margin-left: 20px;
+    margin-right: 20px;
     width: 8em;
   }
   .top-nav ul li a{
     display: block;
     color: var(--fg);
     font-weight: 500;
+  }
+  .top-nav ul li a:hover{
+    color: #666;
   }
 
   @media (max-width: 640px) {
