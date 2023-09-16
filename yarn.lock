@@ -853,9 +853,15 @@
   integrity sha512-A9S1ijj/4MX06I1W/6on8lhaYyq1Ir7gaOvfllW1o4RzVWW88HAeqX0pUx9VgOLnNpdiGeUW2CTkg18p5LWIrA==
 
 "@types/hast@^2.0.0":
+<<<<<<< HEAD
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.6.tgz#bb8b05602112a26d22868acb70c4b20984ec7086"
   integrity sha512-47rJE80oqPmFdVDCD7IheXBrVdwuBgsYwoczFvKmwfo2Mzsnt+V9OONsYauFmICb6lQPpCuXYJWejBNs4pDJRg==
+=======
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.5.tgz#08caac88b44d0fdd04dc17a19142355f43bd8a7a"
+  integrity sha512-SvQi0L/lNpThgPoleH53cdjB3y9zpLlVjRbqB3rH8hx1jiRSBGAhyjV3H+URFjNVRqt2EdYNrbZE5IsGlNfpRg==
+>>>>>>> 092c7cafcdfb47016cb4425dcf9fdb61519d0e2a
   dependencies:
     "@types/unist" "^2"
 
@@ -2823,9 +2829,15 @@ flat@^5.0.2:
   integrity sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==
 
 flatted@^3.2.7:
+<<<<<<< HEAD
   version "3.2.9"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
+=======
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
+  integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
+>>>>>>> 092c7cafcdfb47016cb4425dcf9fdb61519d0e2a
 
 follow-redirects@^1.14.0, follow-redirects@^1.15.0:
   version "1.15.2"
