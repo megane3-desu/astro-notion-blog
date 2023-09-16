@@ -76,18 +76,17 @@ if (database.Icon && database.Icon.Type === 'file') {
   <body>
     <GoogleAnalytics trackingId={PUBLIC_GA_TRACKING_ID} />
     <div class="container">
-      <header>
-        {
-          coverImageURL && (
-            <div class="cover">
-              <img src={coverImageURL} alt="Site cover image" loading="lazy" />
-            </div>
-          )
-        }
-      </header>
-
       <div>
         <main>
+          <div class="cover">
+            {
+              coverImageURL && (
+                <div class="cover">
+                  <img src={coverImageURL} alt="Site cover image" loading="lazy" />
+                </div>
+              )
+            }
+          </div>
           <div class="content">
             <header>
               <h1>
@@ -120,6 +119,12 @@ if (database.Icon && database.Icon.Type === 'file') {
               </h1>
               <div class="description">
                 {database.Description}
+              </div>
+              <div class="top-nav">
+                <ul>
+                  <li><a href="/" rel="noopener" target="_blank">ホーム</a></li>
+                  <li><a href="https://megane3-contact.notion.site/16726c3be0854d4abf7eaf6101f04b4d" rel="noopener" target="_blank">問い合わせ</a></li>
+                </ul>
               </div>
             </header>
            
@@ -158,6 +163,22 @@ if (database.Icon && database.Icon.Type === 'file') {
   .container > div {
     display: flex;
     max-width: 1280px;
+  }
+  .top-nav ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+    justify-content: start;
+    padding: 0;
+  }
+  .top-nav ul li{
+    margin-left: 20px;
+    width: 8em;
+  }
+  .top-nav ul li a{
+    display: block;
+    color: var(--fg);
+    font-weight: 500;
   }
 
   @media (max-width: 640px) {
