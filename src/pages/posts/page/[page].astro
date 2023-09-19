@@ -73,6 +73,7 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   <div slot="aside" class={styles.aside}>
     <BlogPostsLink heading="おすすめ記事" posts={rankedPosts} />
     <BlogTagsLink heading="カテゴリ" tags={tags} />
+    <h2 class="aside-kotei">固定リンク</h2>
     <div class="aside-kotei-list">
       <ul>
         <li><a href="/" rel="noopener" target="_blank">📌&nbsp;ホーム</a></li>
