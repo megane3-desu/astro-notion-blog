@@ -57,43 +57,30 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   <div slot="aside" class={styles.aside}>
     <BlogPostsLink heading="おすすめ記事" posts={rankedPosts} />
     <BlogTagsLink heading="カテゴリ" tags={tags} />
-    <h2 class="aside-kotei">固定リンク</h2>
-    <div class="aside-kotei-list">
-        <ul>
-          <li><a href="/" rel="noopener" target="_blank">📌&nbsp;ホーム</a></li>
-          <li><a href="https://megane3-contact.notion.site/16726c3be0854d4abf7eaf6101f04b4d" rel="noopener" target="_blank">📌&nbsp;問い合わせ</a></li>
-          <li><a href="https://twitter.com/hair_no_megane3" rel="noopener" target="_blank">📌&nbsp;X</a></li>
-          <li><a href="https://www.instagram.com/megane_no_item/" rel="noopener" target="_blank">📌&nbsp;Instagram</a></li>
-        </ul>
-    </div>
   </div>
 </Layout>
 
 <style>
-  h2.aside-kotei {
-    margin: 0;
-    padding-left: 0.4rem;
-    color: #777;
-    font-size: 0.95rem;
-  }
-  .aside-kotei-list ul{
-    list-style: none;
-    margin-left: -1.5rem;
-  }
-  .aside-kotei-list li{
-
-  }
   .table-post {
+    border-top: 1px solid #999;
     padding: 10px;
   }
   .table-post2{
-    margin-bottom: -30px;
+    margin-bottom: -10px;
   } 
   .table-post .table-item {
     display: block;
   }
-  .table-post .item3 {
-    display: none;
+  .table-post .item1 {
+    font-size: 1rem;
+  }
+  .table-post2 .item2{
+  }
+  .item2 h2.post-title {
+    font-size: 1rem;
+  }
+  .item2 .post-title a {
+    font-size: 1rem;
   }
   .table-post .item4 {
     display: none;

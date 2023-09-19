@@ -123,5 +123,28 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
     <BlogPostsLink heading="おすすめ記事" posts={rankedPosts} />
     <BlogPostsLink heading="最新記事" posts={recentPosts} />
     <BlogTagsLink heading="カテゴリ" tags={tags} />
+    <div class="aside-kotei-list">
+      <ul>
+        <li><a href="/" rel="noopener" target="_blank">📌&nbsp;ホーム</a></li>
+        <li><a href="https://megane3-contact.notion.site/16726c3be0854d4abf7eaf6101f04b4d" rel="noopener" target="_blank">📌&nbsp;問い合わせ</a></li>
+        <li><a href="https://twitter.com/hair_no_megane3" rel="noopener" target="_blank">📌&nbsp;X</a></li>
+        <li><a href="https://www.instagram.com/megane_no_item/" rel="noopener" target="_blank">📌&nbsp;Instagram</a></li>
+      </ul>
+    </div>
   </div>
 </Layout>
+<style>
+  h2.aside-kotei {
+    margin: 0;
+    padding-left: 0.4rem;
+    color: #777;
+    font-size: 0.95rem;
+  }
+  .aside-kotei-list ul{
+    list-style: none;
+    margin-left: -1.5rem;
+  }
+  .aside-kotei-list li{
+
+  }
+</style>

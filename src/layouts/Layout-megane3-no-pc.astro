@@ -120,8 +120,14 @@ if (database.Icon && database.Icon.Type === 'file') {
               <div class="description">
                 {database.Description}
               </div>
+              <div class="top-nav">
+                <ul>
+                  <li><a href="/" rel="noopener" target="_blank">🏠&nbsp;ホーム</a></li>
+                  <li><a href="https://megane3-contact.notion.site/16726c3be0854d4abf7eaf6101f04b4d" rel="noopener" target="_blank">📩&nbsp;問い合わせ</a></li>
+                </ul>
+              </div>
             </header>
-            <h2 class="top-title">記事一覧</h2>
+           
             <slot name="main" />
 
             <footer>
@@ -158,10 +164,26 @@ if (database.Icon && database.Icon.Type === 'file') {
     display: flex;
     max-width: 1280px;
   }
-  .top-title{
-    margin-bottom: 0;
-    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Hiragino Sans GB", メイリオ, Meiryo, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";;
+  .top-nav ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+    justify-content: start;
+    padding: 0;
   }
+  .top-nav ul li{
+    margin-right: 20px;
+    width: 8em;
+  }
+  .top-nav ul li a{
+    display: block;
+    color: var(--fg);
+    font-weight: 500;
+  }
+  .top-nav ul li a:hover{
+    color: #666;
+  }
+
   @media (max-width: 640px) {
     .container > div {
       display: block;

@@ -11,7 +11,6 @@ const { post, enableLink = true } = Astro.props
 
 let title = post.Title
 ---
-
 <h2 class="post-title">
   {
     enableLink ? (
@@ -54,13 +53,15 @@ let title = post.Title
   .post-title {
     margin: 0;
     padding: 0.2rem 0;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 400;
     color: var(--fg);
   }
   .post-title a {
-    font-size: 1.6rem;
+    text-decoration: underline;
+    font-size: 1rem;
     color: inherit;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Hiragino Sans GB", メイリオ, Meiryo, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";;
   }
   .post-title span,
   .post-title img {
