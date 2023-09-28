@@ -124,6 +124,14 @@ if (database.Icon && database.Icon.Type === 'file') {
               <div class="description">
                 {database.Description}
               </div>
+              <div class="top-list">
+                <ul>
+                  <li><a href="/" rel="noopener" target="_blank">ホーム</a></li>
+                  <li><a href="https://megane3-contact.notion.site/16726c3be0854d4abf7eaf6101f04b4d" rel="noopener" target="_blank">問い合わせ</a></li>
+                  <li><a href="https://twitter.com/hair_no_megane3" rel="noopener" target="_blank">X</a></li>
+                  <li><a href="https://www.instagram.com/megane_no_item/" rel="noopener" target="_blank">Instagram</a></li>
+                </ul>
+              </div>
             </header>
  
             <slot name="main" />
@@ -217,7 +225,7 @@ if (database.Icon && database.Icon.Type === 'file') {
   }
 
   main header {
-    padding: 20px 10px 0 10px;
+    padding: 20px 25px 0 10px;
   }
   main header h1 {
     font-weight: 700;
@@ -259,7 +267,22 @@ if (database.Icon && database.Icon.Type === 'file') {
     padding: 0.3rem 0 0.6rem;
     font-size: 0.95rem;
   }
-
+  main header .top-list ul{
+    list-style: none;
+    margin-left: -1.5rem;
+    white-space:nowrap;
+  }
+  main header .top-list ul li{
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+  main header .top-list ul li a{
+    text-decoration: revert;
+    color: #00379B;
+  }
+  main header .top-list ul li:before{
+    content: "";
+  }
   main footer {
     margin: 30px 0 10px;
     text-align: center;
