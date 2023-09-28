@@ -53,7 +53,7 @@ let title = post.Title
 
   .post-title {
     margin: 0px 0;
-    padding: 0.2rem 0;
+    padding: 0 0 0.2rem;
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--fg);
@@ -63,6 +63,11 @@ let title = post.Title
     font-size: 1rem;
     color: inherit;
     font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Hiragino Sans GB", メイリオ, Meiryo, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* 任意の行数を指定 */
+}
   }
   .post-title span,
   .post-title img {
@@ -78,11 +83,10 @@ let title = post.Title
     vertical-align: sub;
   }
   @media (max-width: 640px) {
-    .post-title {
-      font-size: 1.4rem;
-    }
+
     .post-title a {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
+
   }
 </style>
