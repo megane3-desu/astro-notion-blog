@@ -120,7 +120,7 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
         (p: interfaces.Post) => p.Slug !== post.Slug
       )}
     />
-    <BlogPostsLink heading="おすすめ記事" posts={rankedPosts} />
+    <!-- <BlogPostsLink heading="おすすめ記事" posts={rankedPosts} /> -->
     <BlogPostsLink heading="最新記事" posts={recentPosts} />
     <BlogTagsLink heading="カテゴリ" tags={tags} />
     <h2 class="aside-kotei">固定リンク</h2>
